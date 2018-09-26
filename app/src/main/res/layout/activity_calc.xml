@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalcActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp">
+
+            <EditText
+                android:id="@+id/weight_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Peso"
+                android:inputType="text|number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp">
+
+            <EditText
+                android:id="@+id/height_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Altura"
+                android:inputType="text|number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Calcular"
+            android:onClick="calcule"/>
+
+
+        <TextView
+            android:id="@+id/show_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp">
+
+                <TableRow
+                    android:id="@+id/row1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="IMC"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:paddingRight="70dp"/>
+
+                    <TextView
+                        android:text="Classificação"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/lass_than_sixteen"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:text="Magreza grave"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/eq_sixteen_or_less_than_seventeen"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:text="Magreza moderada"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/eq_seventeen_or_less_than_eighteen_point_five"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:text="Magreza leve"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/eq_eighteen_point_five_or_less_than_twentyfive"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:text="Saudável"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/eq_twentyfive_or_less_than_thirty"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:text="Sobrepeso"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/eq_thirty_or_less_than_thirtyfive"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:text="Obesidade grau I"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/eq_thirtyfive_or_less_than_forty"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:text="Obesidade grau II (severa)"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/more_than_forty"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:text="Obesidade grau III (mórbida)"
+                        android:textSize="20dp"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

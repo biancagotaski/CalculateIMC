@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cálculo de IMC</string>
+    <string name="lass_than_sixteen"><![CDATA[< 16]]></string>
+    <string name="eq_sixteen_or_less_than_seventeen"><![CDATA[16 a < 17]]></string>
+    <string name="eq_seventeen_or_less_than_eighteen_point_five">17 a 18.5</string>
+    <string name="eq_eighteen_point_five_or_less_than_twentyfive"><![CDATA[18.5 a < 25]]></string>
+    <string name="eq_twentyfive_or_less_than_thirty"><![CDATA[25 a < 30]]></string>
+    <string name="eq_thirty_or_less_than_thirtyfive"><![CDATA[30 a < 35]]></string>
+    <string name="eq_thirtyfive_or_less_than_forty"><![CDATA[35 a < 40]]></string>
+    <string name="more_than_forty"><![CDATA[> 40]]></string>
+</resources>
